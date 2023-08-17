@@ -1,0 +1,27 @@
+﻿@page
+@model MobileStore.Pages.CreateOrderModel
+@{
+}
+<div class="text-center">
+    <h2>Create Your Order</h2>
+
+    <form method="post">
+        <label>Customer Name : </label>
+        <input type ="text" class="form-control-sm mb-1" placeholder="Enter Your Name..." asp-for="Mobile.MobileName"/><br />
+
+        <label>Select Mobile : </label>
+        <select class="form-control-sm mb-1" asp-for="Mobile.ImageName">
+            <option value="iphone13promax">iphone 13 pro max</option>
+            <option value="iphone12promax">iphone 12 pro max</option>
+            <option value="iphone11promax">iphone 11 pro max</option>
+            <option value="Googlepixel7pro">Google pixel 7 pro</option>
+            <option value="Googlepixel7">Google pixel 7</option>
+            <option value="Googlepixel6pro">Google pixel 6 pro</option>
+            <option value="redminote12">redmi note 12</option>
+            <option value="xiaomiredminote12s">xiaomi redmi note 12s</option>
+            <option value="RedmiA2Plus">Redmi A2 Plus</option>
+        </select><br />
+
+        <button class="btn btn-danger m-2">Confirm Order</button>
+    </form>
+</div>

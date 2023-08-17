@@ -1,0 +1,17 @@
+﻿@page
+@model MobileStore.Pages.ThankYouModel
+@{
+}
+
+@{
+    var imagePath="./images/"+(Model.ImageName+".png");
+}
+
+<div class="text-center">
+    <h2>Thank You For Ordering..!</h2>
+    <br />
+
+    <img src="@imagePath" class="w-25"/>
+    <h4>Customer Name : @Model.MobileName</h4>
+    <h5>Mobile : @Model.ImageName</h5>
+</div>
